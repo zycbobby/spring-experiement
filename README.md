@@ -5,9 +5,10 @@
 This project to test the order of running static block and spring bean initialization
 
 Experiement: can static block access autowired object?
+
 **先要明白Static块是什么时候运行的**
 
-Static块是在类第一次被加载的时候运行的，在Spring里头，应该是可以的
+Static块是在类第一次被加载的时候运行
 
 **spring的对象初始化是在什么时候运行的**
 > Assuming the bean is a singleton, and isn't configured for lazy initialisation, then it's created when the context is started up. getBean() just fishes it out.
